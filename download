@@ -1,1 +1,5 @@
 https://universe.roboflow.com/ds/eq5dcbYvNO?key=0M8dmNyWVS
+
+
+terminal
+curl -L "https://universe.roboflow.com/ds/eq5dcbYvNO?key=0M8dmNyWVS" &gt; roboflow.zip; unzip roboflow.zip; rm roboflow.zip
