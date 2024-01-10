@@ -1,0 +1,12 @@
+ls /dev/video*
+
+sudo apt-get install fswebcam
+
+fswebcam -r 1280x720 --no-banner /path/to/save/image.jpg
+
+crontab -e
+
+0 * * * * fswebcam -r 1280x720 --no-banner /path/to/save/image_$(date +\%Y\%m\%d_\%H\%M\%S).jpg
+
+本地
+scp pi@<樹莓派 IP 地址>:/path/to/shared/image.jpg C:\local\path\to\save\
