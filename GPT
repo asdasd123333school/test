@@ -10,3 +10,8 @@ crontab -e
 
 本地
 scp pi@<樹莓派 IP 地址>:/path/to/shared/image.jpg C:\local\path\to\save\
+
+
+
+orange to SQL 下載window
+https://orangedatamining.com/blog/how-to-enable-sql-widget-in-orange/
