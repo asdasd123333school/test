@@ -1,15 +1,3 @@
-ls /dev/video*
-
-sudo apt-get install fswebcam
-
-fswebcam -r 1280x720 --no-banner /path/to/save/image.jpg
-
-crontab -e
-
-0 * * * * fswebcam -r 1280x720 --no-banner /path/to/save/image_$(date +\%Y\%m\%d_\%H\%M\%S).jpg
-
-本地
-scp pi@<樹莓派 IP 地址>:/path/to/shared/image.jpg C:\local\path\to\save\
 
 orange to SQL 下載window
 https://orangedatamining.com/blog/how-to-enable-sql-widget-in-orange/
@@ -23,3 +11,6 @@ https://github.com/PaddlePaddle/PaddleOCR?tab=readme-ov-file #線上版試試，
 https://www.paddlepaddle.org.cn/install/quick?docurl=/documentation/docs/zh/install/pip/windows-pip.html
 https://www.paddlepaddle.org.cn/whl/windows/mkl/avx/stable.html
 https://www.lfd.uci.edu/~gohlke/pythonlibs/#shapely
+
+新的文字辨識套件 pan，下載config、model
+https://github.com/whai362/pan_pp.pytorch/tree/master/config/pan
