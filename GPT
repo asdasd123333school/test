@@ -12,5 +12,5 @@ https://www.paddlepaddle.org.cn/install/quick?docurl=/documentation/docs/zh/inst
 https://www.paddlepaddle.org.cn/whl/windows/mkl/avx/stable.html
 https://www.lfd.uci.edu/~gohlke/pythonlibs/#shapely
 
-新的文字辨識套件 pan，下載config、model
+新的文字辨識套件 pan，下載CTW1500--config、model
 https://github.com/whai362/pan_pp.pytorch/tree/master/config/pan
