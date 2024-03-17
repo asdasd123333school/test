@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kml id="65f6f2beddcb0" xmlns="http://earth.google.com/kml/2.0">
+	<Folder>
+		<name>Saved Places</name>
+		<Placemark>
+			<Point>
+				<coordinates>120.6253855,24.1850038,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</kml>
