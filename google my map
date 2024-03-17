@@ -1,4 +1,16 @@
 import csv
+import re
+
+def extract_coordinates_from_url(url):
+    # 檢查網址中是否包含經緯度資訊
+    pattern = r'@(-?\d+\.\d+),(-?\d+\.\d+),'
+    match = re.search(pattern, url)
+    if match:
+        latitude = match.group(1)
+        longitude = match.group(2)
+        return latitude, longitude
+    else:
+        return None, None
 
 def csv_to_kml(input_file, output_file):
     # 打開 CSV 檔案並讀取資料
@@ -18,23 +30,20 @@ def csv_to_kml(input_file, output_file):
             url = row['網址']
             description = row['留言']
 
-            # 檢查網址是否包含經緯度資訊
-            if 'maps/search' in url:
-                coordinates = url.split('/search/')[1]
-            else:
-                coordinates = url.split('/place/')[1].split('/')[0]
-            
             # 提取座標
-            latitude, longitude = coordinates.split(',')
+            latitude, longitude = extract_coordinates_from_url(url)
             
-            # 創建 KML 標記
-            kml_content += f'<Placemark>\n'
-            kml_content += f'<name>{title}</name>\n'
-            kml_content += f'<description>{note} - {description}</description>\n'
-            kml_content += f'<Point>\n'
-            kml_content += f'<coordinates>{longitude},{latitude},0</coordinates>\n'
-            kml_content += f'</Point>\n'
-            kml_content += f'</Placemark>\n'
+            if latitude is not None and longitude is not None:
+                # 創建 KML 標記
+                kml_content += f'<Placemark>\n'
+                kml_content += f'<name>{title}</name>\n'
+                kml_content += f'<description>{note} - {description}</description>\n'
+                kml_content += f'<Point>\n'
+                kml_content += f'<coordinates>{longitude},{latitude},0</coordinates>\n'
+                kml_content += f'</Point>\n'
+                kml_content += f'</Placemark>\n'
+            else:
+                print(f"無法從網址提取座標: {url}")
 
         # 加入 KML 檔案的結尾部分
         kml_content += '</Document>\n'
