@@ -1,0 +1,52 @@
+import csv
+
+def csv_to_kml(input_file, output_file):
+    # 打開 CSV 檔案並讀取資料
+    with open(input_file, 'r', encoding='utf-8') as csvfile:
+        csv_reader = csv.DictReader(csvfile)
+        
+        # 創建 KML 檔案的起始部分
+        kml_content = '<?xml version="1.0" encoding="UTF-8"?>\n'
+        kml_content += '<kml xmlns="http://www.opengis.net/kml/2.2">\n'
+        kml_content += '<Document>\n'
+
+        # 遍歷 CSV 檔案中的每一行
+        for row in csv_reader:
+            # 從 CSV 中讀取標題、筆記、網址和留言
+            title = row['標題']
+            note = row['筆記']
+            url = row['網址']
+            description = row['留言']
+
+            # 檢查網址是否包含經緯度資訊
+            if 'maps/search' in url:
+                coordinates = url.split('/search/')[1]
+            else:
+                coordinates = url.split('/place/')[1].split('/')[0]
+            
+            # 提取座標
+            latitude, longitude = coordinates.split(',')
+            
+            # 創建 KML 標記
+            kml_content += f'<Placemark>\n'
+            kml_content += f'<name>{title}</name>\n'
+            kml_content += f'<description>{note} - {description}</description>\n'
+            kml_content += f'<Point>\n'
+            kml_content += f'<coordinates>{longitude},{latitude},0</coordinates>\n'
+            kml_content += f'</Point>\n'
+            kml_content += f'</Placemark>\n'
+
+        # 加入 KML 檔案的結尾部分
+        kml_content += '</Document>\n'
+        kml_content += '</kml>\n'
+
+    # 將 KML 內容寫入到檔案中
+    with open(output_file, 'w', encoding='utf-8') as kmlfile:
+        kmlfile.write(kml_content)
+
+# 指定輸入和輸出檔案的路徑
+input_file = 'your_input_file.csv'
+output_file = 'output_file.kml'
+
+# 呼叫函式來進行轉換
+csv_to_kml(input_file, output_file)
