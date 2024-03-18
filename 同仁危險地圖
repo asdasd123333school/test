@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+<Placemark>
+<name>已放置圖釘</name>
+<description>2023/01/16 ML7AE2 - </description>
+<Point>
+<coordinates>120.6184757,24.2067037,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>已放置圖釘</name>
+<description>2023/01/13 ML7AM1 - </description>
+<Point>
+<coordinates>120.6231532,24.1760195,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>已放置圖釘</name>
+<description>2023/02/10 ML7AP2 - </description>
+<Point>
+<coordinates>120.6516959,24.1895431,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>已放置圖釘</name>
+<description>2023/02/15 ML7AM3 - </description>
+<Point>
+<coordinates>120.6188143,24.2065257,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>已放置圖釘</name>
+<description>2023/03/27 ML7AL1 - </description>
+<Point>
+<coordinates>120.658786,24.1946263,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>已放置圖釘</name>
+<description> - </description>
+<Point>
+<coordinates>120.6665322,24.1661658,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>已放置圖釘</name>
+<description>2023/05/14 ML7AL2 - </description>
+<Point>
+<coordinates>120.6152601,24.1833097,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>已放置圖釘</name>
+<description>2023/08/10 ML7AA1 - </description>
+<Point>
+<coordinates>120.5000706,24.1090076,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>已放置圖釘</name>
+<description>2023/08/25 ML7AP1 - </description>
+<Point>
+<coordinates>120.6172248,24.2082847,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>已放置圖釘</name>
+<description>2023/09/07 ML7AB1 - </description>
+<Point>
+<coordinates>120.6166538,24.2084452,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>已放置圖釘</name>
+<description>2023/10/31 ML7AL1 - </description>
+<Point>
+<coordinates>120.5685387,24.2249804,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>已放置圖釘</name>
+<description>2023/11/25 ML7AN2 - </description>
+<Point>
+<coordinates>120.5942282,24.1908594,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>已放置圖釘</name>
+<description>2023/12/08 ML7AP2 - </description>
+<Point>
+<coordinates>120.594481,24.1910894,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>已放置圖釘</name>
+<description>2023/12/12 ML7AN2 - </description>
+<Point>
+<coordinates>120.7064917,24.2569336,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>已放置圖釘</name>
+<description>2023/12/26 ML7AI4 - </description>
+<Point>
+<coordinates>120.6573664,24.2006418,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>已放置圖釘</name>
+<description>2023/12/29 ML7AT3 - </description>
+<Point>
+<coordinates>120.6610803,24.1098651,0</coordinates>
+</Point>
+</Placemark>
+</Document>
+</kml>
