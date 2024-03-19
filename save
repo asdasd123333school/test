@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Saved Places</name>
+    <Style id="icon-1899-0288D1-labelson">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+    </Style>
+    <Style id="icon-1899-0288D1-labelson-nodesc">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Placemark>
+      <name>公司宿舍</name>
+      <styleUrl>#icon-1899-0288D1-labelson-nodesc</styleUrl>
+      <Point>
+        <coordinates>
+          120.618278,24.201981,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>測試1</name>
+      <description><![CDATA[<a href="https://www.youtube.com/watch?v=JCzGQlmCHUk"><img src="https://img.youtube.com/vi/JCzGQlmCHUk/hqdefault.jpg" height="200" width="auto" /></a><br><br><a href="https://www.youtube.com/embed/JCzGQlmCHUk">https://www.youtube.com/embed/JCzGQlmCHUk</a><br><br><br><br><img src="https://doc-0s-1s-mymaps.googleusercontent.com/untrusted/hostedimage/m/6jvne32agr6vfbpmt13i9ddk0c/91jnevefh0vs2g1p1j0o1vluco/1710818798000/NbFF2L3X-XD9dWqTJ1gVMDEpsz5OlnN_/13697137283595924771/5AHUGKgpaSw-pWT2PNt_GfXQsy3I0Pfj9Q-UTaRAQwAD_KPk86Khr3JuD-s4hXHZ85bPu627EWzX0VPSoKde4nO3lV6q5PiVl7Jz-P_8OCoFzoXjabmXQHrgqdrA1LrCYtVSSEbLZWk-NRKK27LgnG8QulZvllCGPunRTd8-8SSojYO8F-VVQgYs8XW0sFKCU0AFoKHhS8oyDt_PiiEuOMH60IIHLfKx2FQYO3IvRH2MXu1XA-wk?session=0&fife" height="200" width="auto" />]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="gx_media_links">
+          <value><![CDATA[https://www.youtube.com/embed/JCzGQlmCHUk https://doc-0s-1s-mymaps.googleusercontent.com/untrusted/hostedimage/m/6jvne32agr6vfbpmt13i9ddk0c/91jnevefh0vs2g1p1j0o1vluco/1710818798000/NbFF2L3X-XD9dWqTJ1gVMDEpsz5OlnN_/13697137283595924771/5AHUGKgpaSw-pWT2PNt_GfXQsy3I0Pfj9Q-UTaRAQwAD_KPk86Khr3JuD-s4hXHZ85bPu627EWzX0VPSoKde4nO3lV6q5PiVl7Jz-P_8OCoFzoXjabmXQHrgqdrA1LrCYtVSSEbLZWk-NRKK27LgnG8QulZvllCGPunRTd8-8SSojYO8F-VVQgYs8XW0sFKCU0AFoKHhS8oyDt_PiiEuOMH60IIHLfKx2FQYO3IvRH2MXu1XA-wk?session=0&fife]]></value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          120.619089,24.211962,0
+        </coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>
