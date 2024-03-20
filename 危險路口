@@ -915,7 +915,7 @@
 </Point>
 </Placemark>
 <Placemark>
-<name>台灣中油文心路站 (直營&自助)</name>
+<name>台灣中油文心路站 (直營自助)</name>
 <description>台中西屯11109 - </description>
 <Point>
 <coordinates>120.650136,24.162852,0</coordinates>
@@ -1202,7 +1202,7 @@
 </Point>
 </Placemark>
 <Placemark>
-<name>中油直營&自助 大雅中清路站</name>
+<name>中油直營自助 大雅中清路站</name>
 <description>台中大雅11103 - </description>
 <Point>
 <coordinates>120.648561,24.217988,0</coordinates>
