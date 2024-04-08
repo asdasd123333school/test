@@ -10,3 +10,7 @@ https://www.kaggle.com/datasets/ialimustufa/object-detection-for-ppe-covid19-dat
 
 安全帽配戴測試
 https://blog.csdn.net/panxiying1993/article/details/127697306
+
+first載這個yolov8，有影片教學，可顯示想偵測物品(class=[0,2]...)
+https://www.kaggle.com/datasets/snehilsanyal/construction-site-safety-image-dataset-roboflow
+https://www.youtube.com/watch?v=l_k9ogNOsvE
