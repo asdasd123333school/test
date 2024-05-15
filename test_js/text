@@ -5,6 +5,7 @@
    npm install serve
    npm install pdf-lib
    npm install downloadjs
+   npm install http-server 
 
    此命令将下载 serve 包及其所有依赖项，并将它们保存在 node_modules 文件夹中。
 
