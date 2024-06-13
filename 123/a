@@ -1,1 +1,18 @@
-a
+1.生成requirements.txt檔(套件檔)
+pip freeze > requirements.txt
+
+2.虛擬環境打包
+pip download -r requirements.txt -d packages -i http://autcbdpypi.corpnet.auo.com/simple/ --extra-index-url http://autcbdpypi.corpnet.auo.com/simple/ --trusted-host autcbdpypi.corpnet.auo.com
+
+(新電腦-記得設定好環境變數)
+3.創建虛擬環境
+(terminal)
+python -m venv .venv
+
+4.呼叫虛擬環境
+call .venv\Scripts\activate
+
+5.(把packages文件夾和requirements.txt文件放入虛擬環境的Scripts文件夾下)
+call .venv\Scripts\activate
+cd 虛擬環境的Scripts文件夾下
+pip install --no-index --find-links=packages -r requirements.txt   
