@@ -1,0 +1,17 @@
+rapidfuzz-3.9.3-cp38-cp38-win_amd64.whl
+
+paddlepaddle-2.6.1-cp38-cp38-win_amd64.whl
+
+paddleocr-2.7.3-py3-none-any.whl
+
+ch_PP-OCRv4_rec_infer.tar
+ch_PP-OCRv4_det_infer.tar
+ch_ppocr_mobile_v2.0_cls_infer.tar
+
+TaipeiSansTCBeta-Regular.ttf
+
+C:\Users\YuqiChan\.paddleocr\whl\cls -> ch_ppocr_mobile_v2.0_cls_infer
+C:\Users\YuqiChan\.paddleocr\whl\det\ch -> ch_PP-OCRv4_det_server_infer or ch_PP-OCRv4_det_infer
+C:\Users\YuqiChan\.paddleocr\whl\rec\ch -> ch_PP-OCRv4_rec_infer
+
+paddleocr.py line.599 註解掉3~4行，下載相關套件
