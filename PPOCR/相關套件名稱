@@ -20,5 +20,5 @@ paddleocr.py line.599 註解掉3~4行，下載相關套件
 paddlepaddle-2.4.2
 附屬檔案:paddle-bfloat 0.1.7-> https://pypi.org/project/paddle-bfloat/#files
 
-安裝gcc、g++的套件教學
+安裝gcc、g++的套件教學，gcc、g++换成7.5.0
 https://c.biancheng.net/view/8077.html
