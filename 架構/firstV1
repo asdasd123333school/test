@@ -4,15 +4,9 @@ https://www.sciencedirect.com/science/article/pii/S0957417423002658#f0020
 傳統的人工現場巡檢為主的檢測，需要專業的安全巡檢人員時刻在施工現場執行巡檢任務，既費時又費力（
 金等人，2022）。--感覺可以加入
 
-1.	YOLO模型
-YOLO為You Only Look Once的縮寫，指的是只需要對圖片做一次卷積後便能夠判斷出圖形內的物體位置與類別。此模型可實時辨識影像中的各種物體，首先會將影像分成多個網格單位，並在每個網格單元進行多個邊界框的預測和屬於哪個類別的機率預測，最後用閥值和非極大值抑制演算法(Non-Maximum Suppression, NMS)的方式得到結果。YOLO可應用到物件偵測、影像分割、姿態估計、動作辨識等領域。總結來說，YOLO模型以其高效率和多功能性在影像辨識領域中嶄露頭角，讓影像辨識技術得以更精確和高效，開啟了許多新的應用可能性。
-過去學者也在眾多的領域中使用了YOLO模型，像是: [https://www.sciencedirect.com/science/article/pii/S0926580524002723]使用了增強後的YOLOv7版本來偵測出地板缺漏處的洞口並在周圍生成出虛擬圍籬，當建築工人在高處作業時，若靠近電子圍籬則能夠及時發現危險，達到事故預防的目的。此研究以是否能夠準確偵測出地板開口與工人作為評估標準，與YOLOv7-segmentation以及SegFormer-B0方法比較平均交集比(Mean Intersection over Union, MIoU)，此研究的MIoU為72.66%，高於其餘兩種方法的51.75%與71.02%。[https://www.sciencedirect.com/science/article/pii/S026322412401399X]提出了YOLO-Region模型，是應用了YOLOv8-Pose來定位每個作業人員與生成骨骼關節的姿勢估計模型，並結合人物重識別(Person Re-Identification, ReID)模型，在不同的動態場景下來準確追蹤多個作業工人。實驗結果與YOLOv3到YOLOv8的模型相比，在每個類別辨識平均精確度(mAP)與每秒幀數(Frame Per Second, FPS)來說，YOLO-Region的mAP為98%、FPS為94.5，遠高於其他模型的mAP為90%~96.4%、FPS為35.6~92.4。[https://www.sciencedirect.com/science/article/pii/S1361841524001336]提出了 YOLO-infantPose模型與STAPose3D模型，分別用於偵測2D的嬰兒姿態估計與3D的嬰兒姿態估計。此研究最後以兩個指標來做為結果評估，分別為單一視圖的再投影平均絕對誤差(Reprojection Mean Absolute Error, RPMAE)和針對多視圖的視圖一致性平均絕對誤差(View-consistency Mean Absolute Error, VCMAE)。此研究結果無論在RPMAE或是VCMAE皆遠遠相比其他模型結果要來的低。[https://www.sciencedirect.com/science/article/pii/S0278612522000243]提出了使用YOLOv3結合VGG16的動作辨識架構，先偵測每個操作員的工作區域，找到該作業員的工作區域並建立相對應的動作資料集，在應用VGG16模型預測每一幀的動作類別，實現動作監控與自動分析的目的，降低傳統IE時間分析所需的人力成本。根據實驗結果所述，YOLOv3結合VGG16的模型在準確率為96%，比原先YOLOv3模型準確率為89%或VGG16模型準確率為64.3%較佳。
-最近幾年來，YOLO模型越來越受到關注，並不斷推出更精確的新版本，尤其在姿態估計和動作偵測方面得到廣泛應用。本研究旨在降低人員在工作過程中受到危害的風險，因此將專注於對作業人員的動作安全進行監測。透過實時監控人員的安全狀況，本研究不僅可以有效降低人力成本，同時也能確保工作環境的安全性。
-	
- 
-2.	工安之物件偵測應用
-工作安全一直是廣受關注的議題，並且有許多相關研究在進行。其主要目的是為了降低工作人員的傷亡率，並透過現代技術的進步來預防危險情況的發生。近年來，越來越多學者開始探討在工業安全中應用物件偵測技術的可能性。這種技術可用於監測個人防護具(Personal Protective Equipment, PPE)的穿戴情況，識別工作環境中是否存在火災或其他緊急情況，並確保工人遵守安全規則，避免進行危險動作。透過物件偵測技術的應用，可以提高工作場所的安全性，保護工人的健康與安全，並有效預防意外事件的發生。
-根據過去學者研究中，也經常應用YOLO中的物件偵測來協助工作安全的危害預防與監控，像是:[https://www.sciencedirect.com/science/article/pii/S0168169923007974]透過YOLO模型偵測人員與農業拖拉機，隨後計算人員與拖拉機的相對位置，應用Q-Q圖與t檢定提高位置準確性，主要應用於遠端安全系統監控拖拉機與人員距離，保障人員安全。[https://www.sciencedirect.com/science/article/pii/S0957417423002658]使用自動焊接頭盔(Automatic Welding Helmet Use, WHU)偵測技術結合YOLOv5s模型並加入Ghost模組與基於雙向特徵金字塔網路(based on Bi-directional Feature Pyramid Network, Bi-FPN)，提出了輕量級人臉輔助模型WHU-YOLO模型。來確保人員焊接時，是否有正確配戴PPE，保障人員施工安全。此模型與原先YOLOv5s相比，不僅僅將原先模型壓縮，參數、權重大小也都減少了35.7%、34.4%，而檢測效能沒有下降。[https://www.sciencedirect.com/science/article/pii/S240584402407645X]介紹了空間通道和池化增強型的YOLOv5s模型(The Spatial Channel and Pooling Enhanced You Only Look Once version 5 small, SCPE-YOLOv5s)來解決因潛在風險導致人員跌倒事件的及時偵測。此研究將SCPE-YOLOv5s與原先的YOLOv5模型相比較，可發現以mAP而言，SCPE-YOLOv5s為88.29%，比YOLOv5提高了 4.87%。
+影像辨識中的動作偵測是指利用電腦視覺技術，通過分析攝影機所捕捉的影像，來自動識別並追蹤人物的動作與行為。動作偵測技術能夠即時辨識人體姿勢、肢體動作及行為模式，從而有效監控特定場景中的人員行為。在工作安全領域，動作偵測技術逐漸成為保障作業環境安全的有力工具。相較於傳統依賴人員監控的方式，影像辨識技術能夠全天候運行，減少人力成本並提高精確性，且能即時警示潛在的危險行為。這不僅有助於預防工安事故，還能為員工的行為提供數據分析，從而進行後續的培訓與改進，大幅提升工作場所的安全性與管理效率。
+過去學者們將應用動作辨識在人員動作是否動作確實等，例如:Gupta等人(2022)提出了HandyPose模型，是一個具有多層特徵的編碼器與解碼器的框架，並加入了多層級瀑布式池化模組提高了手部姿勢的高精度。根據關鍵點正確辨識百分比(Percentage of Correct Keypoint, PCK)來進行評估，本研究PCK指標為74.61%，高於其他學者模型預估指標。Zhang等人(2024)提出了一種基於人體姿勢關鍵點的新型神經網路模型框架，稱為及時姿勢網路(Real-Time Pose Net, RTPNet)。此研究應用了YOLO-Pose來提取人體的關節特徵，並結合了基於2D-CNN模型對人員暴力行為來進行分類，能夠更加準確的健側人員是否有戰鬥行為。RTPNet在四種資料集上的辨識準確度皆在於93.3%~99.3%，遠勝於當前先進技術的準確度。
+根據上述學者研究，
 
 
 
