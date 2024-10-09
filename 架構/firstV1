@@ -11,11 +11,17 @@ Broken stitch detection method for sewing operation using CNN feature map and im
 [https://www.sciencedirect.com/science/article/pii/S0925753522003824]
 認為電腦輔助監控系統對於現場的工作安全管理十分重要，因此提出一種整合了實例分割與姿態估計的模型來取得現場資訊。隨後應用獨創的幾何關係分析演算法與時間序列分析來進行危險識別，進一步提高辨識效能。以樓梯扶手相關的案例研究進行實驗，用於區分行人上下樓梯時是否有抓住扶手。在精準度與召回率而言，此研究為98.26%與95.35%，優於單一視覺資訊分析框架(the Single Visual Information Analysis Framework, SVIA)的95.51%與91.21%。
 
-
 綜合上述學者研究可了解，透過智能監控系統，動作偵測能實時辨識工人動作的異常情況，例如跌倒、滑倒或未佩戴安全裝備等。這不僅能及時發出警報，降低事故風險，還能為事後分析提供重要數據。這項技術還可擴展至遠程監控與協作，提升對多工地的安全管理水平，最終實現更高效的安全保障體系。因此本研究將透過動作偵測的技術作為即時監控人員作業安全防護措施，保障每位人員工作安全。
 
 
 
 
 
-
+電腦配備
+版本:windows Server 2016 Standard
+CPU: Intel(R) Xeon(R) W-2265 CPU @3.50GHz 3.50GHz
+12核心
+GPU 0: NVIDIA GeForce GT 730 (UUID: GPU-32e44628-131a-dccb-5d32-e18b251c4cda)
+GPU 1: NVIDIA RTX A4000 (UUID: GPU-5dbc4476-0a41-a4fc-8b4c-58fa3debdf6e)
+RAM 128G
+系統64位元作業系統 x64型處理器
