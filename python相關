@@ -1,0 +1,110 @@
+虛擬環境(vs code)
+virtualenv .venv
+
+(terminal)
+python -m venv .venv
+#在 Windows 上呼叫：
+.venv\Scripts\activate
+
+公司Python下載套件的地方 :
+http://autcbdpypi.corpnet.auo.com/simple/
+
+公司ftp進入(用資料夾登入)
+ftp://tcftp001/
+
+公司 pip install指令 :9.3.0
+pip install onnxruntime -i http://autcbdpypi.corpnet.auo.com/simple/ --extra-index-url http://autcbdpypi.corpnet.auo.com/simple/ --trusted-host autcbdpypi.corpnet.auo.com
+
+pip install --upgrade pyautogui -i http://autcbdpypi.corpnet.auo.com/simple/ --extra-index-url http://autcbdpypi.corpnet.auo.com/simple/ --trusted-host autcbdpypi.corpnet.auo.com
+
+pip install --no-index --find-links=C:\Users\YuqiChan\Desktop\Chan\flask\.venv\Lib\site-packages -r playwright-1.43.0-py3-none-win_amd64.whl
+
+# 每秒刷新一次GPU
+nvidia-smi -l 1
+
+pip install tk8.6.13-src.tar
+
+yolo v8 預測結果
+cd ultralytics/ultralytics
+yolo predict model=best.pt source='dataset/car_db/test/images'
+
+yolo v8 訓練
+yolo task=detect mode=train model=yolov8n.pt data=datasets/data.yaml epochs=100 imgsz=640  resume=True save=True
+
+
+C:\Users\YuqiChan\AppData\Local\Programs\Tesseract-OCR\tesseract.exe
+
+
+yolo v7 訓練
+python train.py --weights 'yolov7.pt' --cfg cfg/training/yolov7_custom.yaml --data data/mydata.yaml --batch-size 8 --epoch 100 
+yolo v7 測試
+python detect.py --weights runs/train/exp4/20240326best.pt --source test_img/2024_03_25_13_36_14.jpg --conf 0.41 --no-trace
+
+python train.py config/pan/pan_r18_ic15.py
+
+
+
+1.生成requirements.txt檔(套件檔)
+pip freeze > requirements.txt
+
+2.虛擬環境打包
+pip download -r requirements.txt -d packages -i http://autcbdpypi.corpnet.auo.com/simple/ --extra-index-url http://autcbdpypi.corpnet.auo.com/simple/ --trusted-host autcbdpypi.corpnet.auo.com
+
+(新電腦-記得設定好環境變數)
+3.創建虛擬環境
+(terminal)
+python -m venv .venv
+
+4.呼叫虛擬環境
+call .venv\Scripts\activate
+
+5.(把packages文件夾和requirements.txt文件放入虛擬環境的Scripts文件夾下)
+call .venv\Scripts\activate
+cd 虛擬環境的Scripts文件夾下
+pip install --no-index --find-links=packages -r requirements.txt   
+
+
+人員id(撈取工位表資料)
+SELECT 
+    *
+FROM
+    station_db.dutystage_loghis t
+WHERE
+    working_line = 'MVI200/MVI400'
+        AND status = 'login'
+ORDER BY createtime DESC
+
+
+pyinstaller -F -w -i whistle_1.ico auto_punch_in.py
+
+pyinstaller -F paddleocr_test.py
+
+python tracker/track_demo.py --obj ./test_img --tracker deepsort
+
+python -m playwright codegen --target python -o 'mikezhou.py' -b chromium https://tixcraft.com/
+
+
+
+
+
+protobuf==3.19.6  protobuf==4.25.1
+
+numpy==1.24.2  numpy==1.21.5
+
+
+
+pip install -c lap-0.4.0.tar.gz
+
+
+
+python app.py cache test_project projects/test_project/images_set
+
+python app.py train test_project
+
+
+
+
+
+
+
+
